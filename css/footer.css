@@ -1,0 +1,76 @@
+footer { 
+    padding-top : 128px;max-width: 1136px;
+    width: calc(100% - 20vw); /* marges dynamiques ≈10% de chaque côté */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    gap: 16px;
+}
+
+#contact{
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact-left{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#mail{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#maps{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#logo-contact {
+    display: flex;
+    align-items: center;
+}
+
+.text-footer{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-style: 'Regular';
+    font-size: 20px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+#contact-right{
+    display: flex;
+    gap: 34px;
+    align-items: flex-end;
+}
+
+hr{
+    background: linear-gradient(127.78deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 29.81%, rgba(255, 255, 255, 0) 39.9%, rgba(255, 255, 255, 0.3) 100%);
+    height: 1px;
+    width: 100%;
+    border: none;
+    margin: 0;
+}
+
+#mentions{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+#title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;       /* 32px */
+    line-height: normal;    /* laisse le navigateur gérer l’interligne */
+    display: flex;
+    align-items: center;    /* centre verticalement */
+    letter-spacing: 0%;
+}

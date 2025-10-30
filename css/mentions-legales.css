@@ -1,0 +1,58 @@
+body{
+    background-color: black;
+    margin: 0;
+    color: var(--Blanc, rgba(255, 255, 255, 1));
+    background-image: url(../images/background\ bloom\ original.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-style: 'Regular';
+    font-size: 1.125rem;
+    letter-spacing: 0%;
+    line-height: normal;
+    display: flex;
+    align-items: center;  
+}
+
+#title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;       /* 32px */
+    line-height: normal;    /* laisse le navigateur gérer l’interligne */
+    display: flex;
+    align-items: center;    /* centre verticalement */
+    letter-spacing: 0%;
+}
+
+main {
+    max-width: 1136px;
+    width: calc(100% - 20vw); /* marges dynamiques ≈10% de chaque côté */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+}
+
+main > div {
+    padding-top : 128px;
+}
+
+#mentions-legales {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.title2 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}

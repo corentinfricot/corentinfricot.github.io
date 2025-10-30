@@ -1,0 +1,303 @@
+body{
+    background-color: black;
+    margin: 0;
+    color: var(--Blanc, rgba(255, 255, 255, 1));
+    background-image: url(../images/background\ bloom\ original.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+  max-width: 1136px;
+  width: calc(100% - 20vw); /* marges dynamiques ≈10% de chaque côté */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  margin-top: 112px;
+}
+
+
+main > div {
+    padding-top : 128px;
+}
+
+a {
+    transition: all 0.2 ease; 
+    text-decoration: none;
+}
+
+a:hover, a:focus, a:active, button:hover, button:focus, button:active{
+    text-decoration: underline;
+}
+
+a, button {
+    cursor: pointer;
+    color: white;
+}
+
+#title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;       /* 32px */
+    line-height: normal;    /* laisse le navigateur gérer l’interligne */
+    display: flex;
+    align-items: center;    /* centre verticalement */
+    letter-spacing: 0%;
+}
+
+.text {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-style: 'Regular';
+    font-size: 1.125rem;
+    letter-spacing: 0%;
+    line-height: normal;
+    display: flex;
+    align-items: center;  
+}
+
+#a-propos{
+    display: flex;
+    gap: 171px;
+    opacity: 1;
+    margin-right: 60px;
+    align-items: end;
+}
+
+#text-apropos{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    opacity: 1;
+}
+
+#corentin{
+    width: 324px;
+    opacity: 1;
+    border-radius: 90%;
+    border-width: 6px;
+    border: 6px solid var(--Contour-bouton, rgba(255, 255, 255, 0.3));
+}
+
+#competences{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+#text-competences{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    opacity: 1;
+}
+
+#presentation-competences{
+    width: 58%;
+}
+
+#list-competences {
+    opacity: 1;
+    gap: 2%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#competence-element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    height: 271px;
+    opacity: 1;
+    gap: 32px;
+    padding-top: 32px;
+    padding-right: 3%;
+    padding-bottom: 32px;
+    padding-left: 3%;
+    border-radius: 40px;
+    background: linear-gradient(127.78deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 29.81%, rgba(255, 255, 255, 0) 39.9%, rgba(255, 255, 255, 0.3) 100%);
+    box-shadow: 4px 8px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+#details-competences{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.text-element{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-style: 'Regular';
+    font-size: 20px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+#logiciels{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+#list-zone-logiciel{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+#zone-logiciel{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    opacity: 1;
+    border-radius: 40px;
+    padding: 32px;
+    background: linear-gradient(127.78deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 29.81%, rgba(255, 255, 255, 0) 39.9%, rgba(255, 255, 255, 0.3) 100%);
+    box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.15);
+}
+
+#list-logiciels{
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+    grid-column-gap: 48px;
+    grid-row-gap: 36px;
+}
+
+#logiciel{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+#background-icon{
+    width: 64px;
+    height: 64px;
+    background: var(--Contour-bouton, rgba(255, 255, 255, 0.3));
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#projets{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+#list-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+}
+
+#card{
+    width: 32%;
+    opacity: 1;
+    border-radius: 40px;
+    padding: 16px;
+    gap: 32px;
+    background: linear-gradient(127.78deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 29.81%, rgba(255, 255, 255, 0) 39.9%, rgba(255, 255, 255, 0.3) 100%);
+    box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s cubic-bezier(.25,.8,.25,1), box-shadow 0.3s ease;
+    border: none;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#card:hover {
+    transform: translateY(-8px);
+    box-shadow: 6px 12px 20px 6px rgba(0, 0, 0, 0.25); /* ombre plus marquée */
+}
+
+/* image card - overlay gradient */
+#image-card{
+    position: relative;        /* nécessaire pour le ::after */
+    width: 100%;
+    box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    border-radius: 40px;
+}
+
+#image-card img{
+    object-fit: cover;         
+    display: block;
+    border-radius: 40px;          
+}
+
+#image-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;                  
+    pointer-events: none;     
+    border-radius: 40px;       
+    background: linear-gradient(
+        127.78deg,
+        rgba(255, 255, 255, 0.3) 0%,
+        rgba(255, 255, 255, 0) 29.81%,
+        rgba(255, 255, 255, 0) 39.9%,
+        rgba(255, 255, 255, 0.3) 100%
+    );
+    mix-blend-mode: normal; 
+    z-index: 2;                
+}
+
+
+#text-projects{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    margin-bottom: 32px;
+}
+
+#text-title{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-style: 'SemiBold';
+    font-size: 20px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+#text-description{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-style: 'Regular';
+    font-size: 18px;
+    letter-spacing: 0%;
+}
+
+#flex-button-projets{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#button-projects{
+    width: 161px;
+    height: 45px;
+    opacity: 1;
+    border-radius: 30px;
+    border-width: 2px;
+    padding-top: 9.5px;
+    padding-right: 17px;
+    padding-bottom: 9.5px;
+    padding-left: 17px;
+    background: linear-gradient(127.78deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 29.81%, rgba(255, 255, 255, 0) 39.9%, rgba(255, 255, 255, 0.3) 100%);
+    border: 2px solid var(--Contour-bouton, rgba(255, 255, 255, 0.3));
+    color: white;
+}
+

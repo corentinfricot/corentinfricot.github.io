@@ -1,0 +1,76 @@
+header{
+    display: flex;
+    align-items: center;
+    height: auto;
+    justify-content: space-between;
+    opacity: 1;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-bottom-width: 3px;
+    /*background: linear-gradient(268.24deg, rgba(255, 255, 255, 0.15) -5.3%, rgba(255, 255, 255, 0) 22.42%, rgba(255, 255, 255, 0.15) 50.14%, rgba(255, 255, 255, 0) 77.86%, rgba(255, 255, 255, 0.15) 105.58%);*/
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(40px);
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+#name {
+    margin-left: 10%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: 'Regular';
+    font-size: 1.125rem;
+    letter-spacing: 0%;
+    line-height: normal;
+    display: flex;
+    align-items: center;  
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 32px;
+    opacity: 1;
+    margin-right: 10%;
+}
+
+#CV_button{
+    opacity: 1;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border-radius: 30px;
+    border-width: 2px;
+    background: linear-gradient(127.78deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 29.81%, rgba(255, 255, 255, 0) 39.9%, rgba(255, 255, 255, 0.3) 100%);
+    border: 2px solid var(--Contour-bouton, rgba(255, 255, 255, 0.3));
+    color: white;
+    justify-content: center;
+}
+
+#title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;       /* 32px */
+    line-height: normal;    /* laisse le navigateur gérer l’interligne */
+    display: flex;
+    align-items: center;    /* centre verticalement */
+    letter-spacing: 0%;
+}
+
+a {
+    transition: all 0.2 ease; 
+    text-decoration: none;
+}
+
+a:hover, a:focus, a:active, button:hover, button:focus, button:active{
+    text-decoration: underline;
+}
+
+a, button {
+    cursor: pointer;
+    color: white;
+}
