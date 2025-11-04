@@ -28,6 +28,12 @@ header{
     align-items: center;  
 }
 
+#name a:hover, 
+#name a:focus, 
+#name a:active {
+    text-decoration: none;
+}
+
 #menu{
     display: flex;
     align-items: center;
@@ -66,7 +72,7 @@ a {
     text-decoration: none;
 }
 
-a:hover, a:focus, a:active, button:hover, button:focus, button:active{
+a:hover, a:focus, a:active{
     text-decoration: underline;
 }
 

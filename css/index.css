@@ -27,10 +27,6 @@ a {
     text-decoration: none;
 }
 
-a:hover, a:focus, a:active, button:hover, button:focus, button:active{
-    text-decoration: underline;
-}
-
 a, button {
     cursor: pointer;
     color: white;
@@ -280,10 +276,22 @@ a, button {
     letter-spacing: 0%;
 }
 
+#card:hover #text-title {
+    text-decoration: underline !important;
+}
+
+#card:hover #text-description {
+    text-decoration: none !important;
+}
+
 #flex-button-projets{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#flex-button-projets:hover{
+    text-decoration: underline;
 }
 
 #button-projects{

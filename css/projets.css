@@ -1,3 +1,4 @@
+
 body{
     background-color: black;
     margin: 0;
@@ -24,10 +25,6 @@ main > div {
 a {
     transition: all 0.2 ease; 
     text-decoration: none;
-}
-
-a:hover, a:focus, a:active, button:hover, button:focus, button:active{
-    text-decoration: underline;
 }
 
 a, button {
@@ -152,6 +149,14 @@ a, button {
     font-style: 'Regular';
     font-size: 18px;
     letter-spacing: 0%;
+}
+
+#card:hover #text-title {
+    text-decoration: underline !important;
+}
+
+#card:hover #text-description {
+    text-decoration: none !important;
 }
 
 #flex-button-projets{
